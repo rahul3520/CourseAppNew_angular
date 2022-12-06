@@ -28,9 +28,9 @@ export class AddCourseComponent {
       {
         console.log(response)
 
-        if(response.status=="success")
+        if(response.status == "success")
         {
-            alert("course addeed successfully");
+            alert("course added successfully");
             this.courseTitle=""
             this.courseDescription=""
             this.courseDuration=""
