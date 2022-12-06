@@ -12,4 +12,9 @@ export class ApiServiceService {
   {
     return this.http.post("http://localhost:8080/add",dataToSend);
   }
+
+  viewCourse=()=>
+  {
+    return this.http.get("http://localhost:8080/view")
+  }
 }
