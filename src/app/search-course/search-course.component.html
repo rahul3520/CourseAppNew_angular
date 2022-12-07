@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Course title</label>
+                    <input name="courseTitle" [(ngModel)]="courseTitle" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="search()" class="btn btn-success">Search</button>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Course title</th>
+                            <th>Description</th>
+                            <th>Venue</th>
+                            <th>Duration</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let j of searchData">
+                            <td>{{j.courseTitle}}</td>
+                            <td>{{j.courseDescription}}</td>
+                            <td>{{j.courseVenue}}</td>
+                            <td>{{j.courseDuration}}</td>
+                            <td>{{j.courseDate}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
